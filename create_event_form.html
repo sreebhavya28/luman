@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Create Event</title>
+    </head>
+    <body>
+        <form method = "post" action="" >
+            <label> Event Name</label>
+            <input type ="text" name ="event_name" placeholder="Enter the event name" required><br><br>
+            
+            <label>Event date</label>
+            <input type ="date" name ="date"  required><br><br>
+            
+            <label>Organizer mail</label>
+            <input type ="email" name ="email" placeholder="Enter the mail" required><br><br>
+            
+            <label>Organizer phone </label>
+            <input type ="Number" name ="phone" placeholder="Enter the mobile num" required><br><br>
+            
+            <label>Event description</label>
+            <input type ="text" name ="event_desc" placeholder="Enter the event name" required>
+            
+            <label>Event Type</label>
+            <select name ="type">
+                <option></option>
+                <option>virtual</option>
+                <option>on premise</option>
+            </select>
+
+            <label>Event Location</label>
+            <input type ="text" name ="event_loc" placeholder="Enter the location" required><br><br>
+            
+            <label>event status</label>
+            <textarea></textarea><br><br>
+            
+            <label>Maximum seats</label>
+            <input type ="Number" name ="max_seats" required><br><br>
+            <input type ="submit">
+        </form>
+    </body>
+    </html>
