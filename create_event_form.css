@@ -1,0 +1,34 @@
+.main-con {
+  color: #18122b;
+  background-color: #635985;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create-form-div {
+  background-color: #635985;
+  /* height: 100vh; */
+  color: #18122b;
+  width: 400px;
+}
+
+/* .input-field {
+  margin-left: 10px;
+  height: 25px;
+  border-radius: 3px;
+  padding: 1px;
+  border-style: none;
+} */
+.btn {
+  background-color: #18122b;
+  color: white;
+  padding: 5px;
+  border-style: none;
+  border-radius: 5px;
+}
+.btn-div {
+  text-align: center;
+}
+.submit-btn {
+  background-color: #18122b;
+}
