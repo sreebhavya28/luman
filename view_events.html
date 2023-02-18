@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.events-title {
+    width: 96%;
+}
+.events-title {
+    height: 60px;
+    background : #0000ff;
+}
+.events-title, .event-header {
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.event-header {
+    background: #8080801a;
+}
+
+
+.manage-events-title-content {
+    color: #ffffff;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5%;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.event-name {
+    margin-bottom: 0.5%;
+    font-size: medium;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+td {
+    width: 60%;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.event-item {
+    height: 180px;
+    padding: 1%;
+}
+
+</style>
+</head>
+
+<body>
+<div class="header-div">
+    <div class="events-title">
+            <div class="manage-events-title-content">Upcoming Events</div>
+    </div>
+</div>
+
+{% if data.length > 0 %}
+{% for item in data %}
+<div class="header-div">
+    <div class="event-header event-item">
+            <div class="manage-events-header-content">
+                <div class="event-name">{{item.eventName}}</div>
+                <table>
+                    <tr>
+                        <td>
+                            Event description
+                        </td>
+                        <td>
+                            {{item.eventDescription}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Event location
+                        </td>
+                        <td>
+                            {{item.eventLocation}}
+                        </td>
+                    </tr>
+			 <tr>
+                        <td>
+                            Event status
+                        </td>
+                        <td>
+                            {{item.eventStatus}}
+                        </td>
+                    </tr>
+			<tr>
+                        <td>
+                            Event type
+                        </td>
+                        <td>
+                            {{item.eventType}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Event date
+                        </td>
+                        <td>
+                            {{item.eventDate}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Organiser's phone
+                        </td>
+                        <td>
+                            {{item.evenOrganiserPhone}}
+                        </td>
+                    </tr>
+			<tr>
+                        <td>
+                            Organiser's email
+                        </td>
+                        <td>
+                            {{item.eventOrganiserEmail}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Maximum seats
+                        </td>
+                        <td>
+                            {{item.eventMaximumSeats}}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</div>
+
+{% endfor %}
+{% endif %}
+</body>
+</html>
+
